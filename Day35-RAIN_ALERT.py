@@ -10,12 +10,12 @@ from twilio.rest import Client
 twilio app for sending sms"""
 
 #TODO CONSTANTS
-account_sid="AC1662fc856a3964cb888ed94c8ba83335"
-auth_token="7f9907aad9211be811547fa44c65c209"
-my_twilio_phno="+19377147194"
+account_sid=""
+auth_token=""
+my_twilio_phno=""
 """twilio constants"""
 
-API_KEY="459055e569104d9da7317c2f68760374"
+API_KEY=""
 weather_parameter={
 "lat":46.608139
 ,"lon":-121.671577
@@ -47,7 +47,7 @@ for id in weather_id_list:
                         .create(
             body="It's going to rain today,take an umbrella ☂",
             from_=my_twilio_phno,
-            to="+919633323325"
+            to=""
         )
         print(message.sid)
         print(message.status)
